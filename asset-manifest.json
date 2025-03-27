@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lo-nuestro-animacion/static/css/main.e6c13ad2.css",
+    "main.js": "/lo-nuestro-animacion/static/js/main.8192e719.js",
+    "static/js/453.24278c63.chunk.js": "/lo-nuestro-animacion/static/js/453.24278c63.chunk.js",
+    "index.html": "/lo-nuestro-animacion/index.html",
+    "main.e6c13ad2.css.map": "/lo-nuestro-animacion/static/css/main.e6c13ad2.css.map",
+    "main.8192e719.js.map": "/lo-nuestro-animacion/static/js/main.8192e719.js.map",
+    "453.24278c63.chunk.js.map": "/lo-nuestro-animacion/static/js/453.24278c63.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.8192e719.js"
+  ]
+}
