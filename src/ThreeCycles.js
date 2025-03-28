@@ -28,8 +28,8 @@ const Cycle = ({ mode }) => {
   const markerY = (size / 2) + radius * Math.sin((angle - 90) * Math.PI / 180);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 24 }}> {/* Centrado */}
-      <svg width={size} height={size}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 24, width: '100%' }}>
+      <svg width={size} height={size} style={{ display: 'block', margin: '0 auto' }}>
         <circle cx={size / 2} cy={size / 2} r={radius} stroke="#444" strokeDasharray="4 6" strokeWidth={2} fill="none" />
         <circle cx={markerX} cy={markerY} r={3} fill="red" />
 
