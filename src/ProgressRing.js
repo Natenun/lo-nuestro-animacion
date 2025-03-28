@@ -105,6 +105,12 @@ const ProgressRing = ({ size = 200, onFinish }) => {
     return () => clearInterval(interval);
   }, [step]);
 
+  useEffect(() => {
+    if (step === 4) {
+      onFinish();
+    }
+  }, [step, onFinish]);
+
   const offsetIncome = circumference - (incomeProgress / 100) * circumference;
   const offsetCapital = circumference - (capitalProgress / 100) * circumference;
   const centerRadius = radius - 24 - 14 - pulse;
@@ -166,8 +172,8 @@ const ProgressRing = ({ size = 200, onFinish }) => {
       </svg>
       <p style={{ marginTop: 20, maxWidth: 300, textAlign: 'center', fontSize: 16 }}>{getMessage()}</p>
       {step === 3 && (
-        <button onClick={onFinish} style={{ marginTop: 20, padding: '10px 20px' }}>
-          Ver comparación
+        <button onClick={() => setStep(4)} style={{ marginTop: 20, padding: '10px 20px' }}>
+          Continuar
         </button>
       )}
     </div>
