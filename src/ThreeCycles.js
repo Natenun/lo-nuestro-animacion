@@ -64,9 +64,9 @@ const Cycle = ({ mode }) => {
         <circle cx={size / 2} cy={size / 2} r={radius - 28} fill="#111" />
       </svg>
       <p style={{ textAlign: 'center', maxWidth: 180, fontSize: 13, marginTop: 8 }}>
-        {mode === 1 && 'Gasta todo, nunca crece su capital'}
-        {mode === 2 && 'Gasta todo, pero su consumo genera capital'}
-        {mode === 3 && 'Ahorra parte y su consumo también capitaliza'}
+        {mode === 1 && 'Gasta todo, nunca crece su Inversión'}
+        {mode === 2 && 'Gasta todo, pero su consumo genera Inversión'}
+        {mode === 3 && 'Ahorra parte de sus ingresos y su consumo también genera Inversión'}
       </p>
     </div>
   );
