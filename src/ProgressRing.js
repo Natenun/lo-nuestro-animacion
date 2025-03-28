@@ -123,7 +123,7 @@ const ProgressRing = ({ size = 200, onFinish }) => {
     if (step === 0) return 'Este eres tú. El punto palpitando. (Tócame para continuar)';
     if (step === 1) return 'Este es tu ingreso mensual. La mayoría de nosotros gastamos todo lo que ganamos.';
     if (step === 2) return 'Este es tu capital. Empieza pequeño, pero puede crecer cada vez que conservas una parte de tu ingreso y lo inviertes.';
-    if (step === 3) return 'Esta línea representa un año de tu vida. En cada punto tendrás oportunidad de crecer tu capital.';
+    if (step === 3) return 'Esta línea representa un año de tu vida. En cada punto tendrás oportunidad de crecer tu Inversión.';
   };
 
   const markerX = (size / 2) + radius * Math.cos((markerAngle - 90) * (Math.PI / 180));
