@@ -28,7 +28,7 @@ const Cycle = ({ mode }) => {
   const markerY = (size / 2) + radius * Math.sin((angle - 90) * Math.PI / 180);
 
   return (
-    <div style={{ marginBottom: 24 }}> {/* Menor espacio vertical */}
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 24 }}> {/* Centrado */}
       <svg width={size} height={size}>
         <circle cx={size / 2} cy={size / 2} r={radius} stroke="#444" strokeDasharray="4 6" strokeWidth={2} fill="none" />
         <circle cx={markerX} cy={markerY} r={3} fill="red" />
@@ -74,7 +74,7 @@ const Cycle = ({ mode }) => {
 
 const ThreeCycles = ({ onBack }) => {
   return (
-    <div style={{ background: '#fff', padding: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: '100vh' }}>
+    <div style={{ background: '#fff', padding: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
       <h3 style={{ textAlign: 'center', fontSize: 16, marginBottom: 20 }}>Comparación de Comportamientos Financieros</h3>
       <Cycle mode={1} />
       <Cycle mode={2} />
