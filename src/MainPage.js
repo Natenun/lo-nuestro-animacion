@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProgressRing from './ProgressRing';
+import IntroCiclos from './IntroCiclos'; // 👈 nuevo
 import ThreeCycles from './ThreeCycles';
 
 const MainPage = () => {
@@ -7,8 +8,9 @@ const MainPage = () => {
 
   return (
     <>
-      {view === 'intro' && <ProgressRing onFinish={() => setView('compare')} />}
-      {view === 'compare' && <ThreeCycles />}
+      {view === 'intro' && <ProgressRing onFinish={() => setView('introCiclos')} />}
+      {view === 'introCiclos' && <IntroCiclos onContinue={() => setView('tresCiclos')} />}
+      {view === 'tresCiclos' && <ThreeCycles onBack={() => setView('intro')} />}
     </>
   );
 };
